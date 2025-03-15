@@ -3,15 +3,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <style>
-  #clustrmaps-container {
-      text-align: center;
-      margin-top: 20px;
+  #clustrmaps-wrapper {
+      width: 200px; /* 限制 ClustrMaps 统计图的宽度 */
+      height: 150px; /* 限制高度 */
+      overflow: hidden; /* 隐藏超出部分 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
   }
-  
-  #clustrmaps {
-      width: 200px !important;
-      height: 150px !important;
-      max-width: 100%;
+
+  #clustrmaps-container {
+      transform: scale(0.5); /* 让 ClustrMaps 统计图变小 */
+      transform-origin: center;
   }
 </style>
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
@@ -66,8 +70,12 @@
 <li><p>First Place, KDD Cup 2018</p>
 </li>
 </ol>
-<div id="clustrmaps-container">
-  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=X2O01EQu8PnO5XxrEFg82PIQ8ntBYXzPfb5J7ZoI3IM&cl=ffffff&w=a"></script>
+<div id="clustrmaps-wrapper">
+  <div id="clustrmaps-container">
+    <script type="text/javascript" id="clustrmaps"
+        src="//clustrmaps.com/map_v2.js?d=X2O01EQu8PnO5XxrEFg82PIQ8ntBYXzPfb5J7ZoI3IM&cl=ffffff&w=a">
+    </script>
+  </div>
 </div>
 </td>
 </tr>
