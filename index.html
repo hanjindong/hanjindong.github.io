@@ -5,16 +5,14 @@
 <style>
   #clustrmaps-container {
     text-align: center;
-    margin-top: 20px;
-    transform: scale(0.8); /* 适当缩放，避免图片太小 */
-    transform-origin: center;
+    margin-top: 20px; /* 让它与上方内容有间距 */
   }
-
+  
   #clustrmaps-container iframe,
   #clustrmaps-container img {
-      width: 150px !important; /* 固定宽度 */
-      height: auto !important; /* 自适应高度，防止变成一条线 */
-      max-width: 100%;
+      width: 300px !important; /* 设置固定宽度 */
+      height: auto !important; /* 保持纵横比 */
+      max-width: 100%; /* 防止超出屏幕 */
   }
 </style>
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
