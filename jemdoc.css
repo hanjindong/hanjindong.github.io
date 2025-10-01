@@ -1,5 +1,16 @@
 /* Default css file for jemdoc. */
 
+.pub-note {
+  display: block;           /* 换行显示 */
+  margin-top: 4px;
+  padding: 2px 6px;
+  border: 1px solid #d9534f; /* 红色边框 */
+  border-radius: 4px;
+  color: #d9534f;           /* 红色字体 */
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
 table#tlayout {
     border: none;
     border-collapse: separate;
